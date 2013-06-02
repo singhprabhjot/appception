@@ -1,0 +1,32 @@
+
+Source:http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_opacity_js
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function ChangeOpacity(x)
+{
+// Return the text of the selected option
+var opacity=x.options[x.selectedIndex].text;
+var el=document.getElementById("p1");
+if (el.style.opacity!==undefined)
+  {el.style.opacity=opacity;}
+else
+  {alert("Your browser doesn't support this example!");}
+}
+</script>
+</head>
+<body>
+
+<p id="p1">Select a value from the list below, to change this element's opacity!</p>
+<select onchange="ChangeOpacity(this);" size="5">
+  <option />0
+  <option />0.2
+  <option />0.5
+  <option />0.8
+  <option selected="selected" />1
+</select>
+
+</body>
+</html>

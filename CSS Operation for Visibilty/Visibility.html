@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function ChangeVisibilityToHide(x)
+{
+var el=document.getElementById("p1");
+el.style.visibility='hidden'
+}
+
+function ChangeVisibilityToShow(x)
+{
+var el=document.getElementById("p1");
+el.style.visibility='visible'
+}
+
+</script>
+</head>
+<body>
+
+<p id="p1">Press the button to change visibility </p>
+
+<input type="button" name="hide" value=" HIDE " onClick="ChangeVisibilityToHide(this);"/> 
+<input type="button" name="show" value=" SHOW " onClick="ChangeVisibilityToShow(this);"/>
+
+
+</body>
+</html>
